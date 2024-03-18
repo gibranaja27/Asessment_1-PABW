@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-  <h1>Kalkulator Sederhana</h1>
-  <h4>Operasi Tambah</h4>
- <div class="inputnum">
-    <input type="number" id="angka1">
-    <h2>+</h2>
-    <input type="number" id="angka2">
-    <button onclick="hitung()">Hitung</button>
-    <p id="hasil">=</p>
- </div>
-  <script>
-    function hitung() {
+  </head>
+  <body>
+    <h1>Kalkulator Sederhana</h1>
+    <h4>Operasi Tambah</h4>
+    <div class="inputnum">
+      <input type="number" id="angka1" />
+      <h2>+</h2>
+      <input type="number" id="angka2" />
+      <button onclick="hitung()">Hitung</button>
+      <p id="hasil">=</p>
+    </div>
+    <script>
+      function hitung() {
         var angka1 = document.getElementById("angka1").value;
         var angka2 = document.getElementById("angka2").value;
         var hasil = parseInt(angka1) + parseInt(angka2);
         document.getElementById("hasil").innerHTML = hasil;
-}
-  </script>
-</body>
+      }
+    </script>
+  </body>
 </html>
