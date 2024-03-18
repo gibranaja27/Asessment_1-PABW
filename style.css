@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input {
+    width: 100px;
+    margin: 5px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 5px 10px;
+  }
+  
+  #hasil {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .inputnum {
+    display: flex;
+  }
