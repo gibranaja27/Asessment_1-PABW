@@ -7,21 +7,40 @@
     <title>Document</title>
   </head>
   <body>
+   <div class="all">
     <h1>Kalkulator Sederhana</h1>
     <h4>Operasi Tambah</h4>
     <div class="inputnum">
       <input type="number" id="angka1" />
       <h2>+</h2>
       <input type="number" id="angka2" />
-      <button onclick="hitung()">Hitung</button>
-      <p id="hasil">=</p>
+      <button onclick="hitungtambah()">Hitung</button>
+      <p id="hasiltambah">=</p>
     </div>
+    <h4>Operasi Kurang</h4>
+    <div class="inputkurang">
+      <input type="number" id="angka3" />
+      <h2>-</h2>
+      <input type="number" id="angka4" />
+      <button onclick="hitungkurang()">Hitung</button>
+      <p id="hasilkurang">=</p>
+    </div>
+   </div>
+
+    <!-- logika javascript -->
     <script>
-      function hitung() {
+      function hitungtambah() {
         var angka1 = document.getElementById("angka1").value;
         var angka2 = document.getElementById("angka2").value;
         var hasil = parseInt(angka1) + parseInt(angka2);
-        document.getElementById("hasil").innerHTML = hasil;
+        document.getElementById("hasiltambah").innerHTML = hasil;
+      }
+
+      function hitungkurang() {
+        var angka1 = document.getElementById("angka3").value;
+        var angka2 = document.getElementById("angka4").value;
+        var hasil = parseInt(angka1) - parseInt(angka2);
+        document.getElementById("hasilkurang").innerHTML = hasil;
       }
     </script>
   </body>
