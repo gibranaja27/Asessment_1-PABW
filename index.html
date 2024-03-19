@@ -41,6 +41,14 @@
       <button onclick="hitungbagi()">Hitung</button>
       <p id="hasilbagi">=</p>
     </div>
+    <h4>Operasi Mencari Modulus Dari Hasil Pembagian</h4>
+    <div class="inputbagi">
+      <input type="number" id="angka9" />
+      <h2>/</h2>
+      <input type="number" id="angka10" />
+      <button onclick="hitungmodulus()">Hitung</button>
+      <p id="hasilmodulus">=</p>
+    </div>
    </div>
    </div>
 
@@ -72,6 +80,13 @@
         var angka2 = document.getElementById("angka8").value;
         var hasil = parseInt(angka1) / parseInt(angka2);
         document.getElementById("hasilbagi").innerHTML = hasil;
+      }
+
+      function hitungmodulus() {
+        var angka1 = document.getElementById("angka9").value;
+        var angka2 = document.getElementById("angka10").value;
+        var hasil = parseInt(angka1) % parseInt(angka2);
+        document.getElementById("hasilmodulus").innerHTML = hasil;
       }
     </script>
   </body>
