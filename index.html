@@ -33,6 +33,14 @@
       <button onclick="hitungkali()">Hitung</button>
       <p id="hasilkali">=</p>
     </div>
+    <h4>Operasi pembagian</h4>
+    <div class="inputbagi">
+      <input type="number" id="angka7" />
+      <h2>/</h2>
+      <input type="number" id="angka8" />
+      <button onclick="hitungbagi()">Hitung</button>
+      <p id="hasilbagi">=</p>
+    </div>
    </div>
    </div>
 
@@ -57,6 +65,13 @@
         var angka2 = document.getElementById("angka6").value;
         var hasil = parseInt(angka1) * parseInt(angka2);
         document.getElementById("hasilkali").innerHTML = hasil;
+      }
+
+      function hitungbagi() {
+        var angka1 = document.getElementById("angka7").value;
+        var angka2 = document.getElementById("angka8").value;
+        var hasil = parseInt(angka1) / parseInt(angka2);
+        document.getElementById("hasilbagi").innerHTML = hasil;
       }
     </script>
   </body>
