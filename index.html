@@ -25,6 +25,15 @@
       <button onclick="hitungkurang()">Hitung</button>
       <p id="hasilkurang">=</p>
     </div>
+    <h4>Operasi perkalian</h4>
+    <div class="inputkali">
+      <input type="number" id="angka5" />
+      <h2>*</h2>
+      <input type="number" id="angka6" />
+      <button onclick="hitungkali()">Hitung</button>
+      <p id="hasilkali">=</p>
+    </div>
+   </div>
    </div>
 
     <!-- logika javascript -->
@@ -41,6 +50,13 @@
         var angka2 = document.getElementById("angka4").value;
         var hasil = parseInt(angka1) - parseInt(angka2);
         document.getElementById("hasilkurang").innerHTML = hasil;
+      }
+
+      function hitungkali() {
+        var angka1 = document.getElementById("angka5").value;
+        var angka2 = document.getElementById("angka6").value;
+        var hasil = parseInt(angka1) * parseInt(angka2);
+        document.getElementById("hasilkali").innerHTML = hasil;
       }
     </script>
   </body>
