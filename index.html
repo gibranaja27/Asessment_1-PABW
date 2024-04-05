@@ -1,93 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-   <div class="all">
-    <h1>Kalkulator Sederhana</h1>
-    <h4>Operasi Tambah</h4>
-    <div class="inputnum">
-      <input type="number" id="angka1" />
-      <h2>+</h2>
-      <input type="number" id="angka2" />
-      <button onclick="hitungtambah()">Hitung</button>
-      <p id="hasiltambah">=</p>
-    </div>
-    <h4>Operasi Kurang</h4>
-    <div class="inputkurang">
-      <input type="number" id="angka3" />
-      <h2>-</h2>
-      <input type="number" id="angka4" />
-      <button onclick="hitungkurang()">Hitung</button>
-      <p id="hasilkurang">=</p>
-    </div>
-    <h4>Operasi perkalian</h4>
-    <div class="inputkali">
-      <input type="number" id="angka5" />
-      <h2>*</h2>
-      <input type="number" id="angka6" />
-      <button onclick="hitungkali()">Hitung</button>
-      <p id="hasilkali">=</p>
-    </div>
-    <h4>Operasi pembagian</h4>
-    <div class="inputbagi">
-      <input type="number" id="angka7" />
-      <h2>/</h2>
-      <input type="number" id="angka8" />
-      <button onclick="hitungbagi()">Hitung</button>
-      <p id="hasilbagi">=</p>
-    </div>
-    <h4>Operasi Mencari Modulus Dari Hasil Pembagian</h4>
-    <div class="inputbagi">
-      <input type="number" id="angka9" />
-      <h2>%</h2>
-      <input type="number" id="angka10" />
-      <button onclick="hitungmodulus()">Hitung</button>
-      <p id="hasilmodulus">=</p>
-    </div>
-   </div>
-   </div>
-
-    <!-- logika javascript -->
-    <script>
-      function hitungtambah() {
-        var angka1 = document.getElementById("angka1").value;
-        var angka2 = document.getElementById("angka2").value;
-        var hasil = parseInt(angka1) + parseInt(angka2);
-        document.getElementById("hasiltambah").innerHTML = hasil;
-      }
-
-      function hitungkurang() {
-        var angka1 = document.getElementById("angka3").value;
-        var angka2 = document.getElementById("angka4").value;
-        var hasil = parseInt(angka1) - parseInt(angka2);
-        document.getElementById("hasilkurang").innerHTML = hasil;
-      }
-
-      function hitungkali() {
-        var angka1 = document.getElementById("angka5").value;
-        var angka2 = document.getElementById("angka6").value;
-        var hasil = parseInt(angka1) * parseInt(angka2);
-        document.getElementById("hasilkali").innerHTML = hasil;
-      }
-
-      function hitungbagi() {
-        var angka1 = document.getElementById("angka7").value;
-        var angka2 = document.getElementById("angka8").value;
-        var hasil = parseInt(angka1) / parseInt(angka2);
-        document.getElementById("hasilbagi").innerHTML = hasil;
-      }
-
-      function hitungmodulus() {
-        var angka1 = document.getElementById("angka9").value;
-        var angka2 = document.getElementById("angka10").value;
-        var hasil = parseInt(angka1) % parseInt(angka2);
-        document.getElementById("hasilmodulus").innerHTML = hasil;
-      }
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="foto">
+    <img src="foto iracias.jpg" alt="" width="250px" height="250px">
+  </div>
+  <div>
+    <h2>NIM :6701223044</h2>
+  </div>
+  <div>
+    <h2>KELAS :46-02</h2>
+  </div>
+</body>
 </html>
