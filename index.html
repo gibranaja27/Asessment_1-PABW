@@ -20,16 +20,37 @@
   </div>
   <div>
     <h2>Pilih Judul Buku</h2>
-    <select name="buku" id="buku">
+    <select name="nama" id="nama">
       <option value="sherlock">sherlock</option>
       <option value="lupin">lupin</option>
       <option value="aladin">aladin</option>
     </select>
   </div>
   <div>
-    <button onclick="cek_isi_text()">sumbit</button>
+    <button onclick="cek_isi_text()">Cek Jumlah</button>
   </div>
   <script>
+    const buku = [
+     {"nama": "sherlock", "jumlah":2},
+     {"nama": "lupin", "jumlah":2},
+     {"nama": "aladin", "jumlah":2},
+    ]
+
+    function tambahBuku() {
+      // dapatkan nilai dari text field
+      const jumlah = document.getElementById("jumlah").value;
+      // dapatkan nama buku yang dipilih
+      const nama = document.getElementById("nama").value;
+      // membuat objek data
+      const data = {
+        nama: nama,
+        jumlah: parseInt(jumlah),
+      };
+      // menambahkan data ke array
+      buku.push(data);
+      console.log(buku);
+    }
+
     function cek_isi_text() {
       const nama = document.getElementById("jumlah").value;
 
