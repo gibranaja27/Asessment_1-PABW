@@ -29,5 +29,17 @@
   <div>
     <button onclick="cek_isi_text()">sumbit</button>
   </div>
+  <script>
+    function cek_isi_text() {
+      const nama = document.getElementById("jumlah").value;
+
+      if (nama === "") {
+        alert("Text Field Harus Di isi")
+      }
+      else {
+        alert("Text field telah terisi")
+      }
+    }
+  </script>
 </body>
 </html>
